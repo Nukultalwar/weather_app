@@ -15,7 +15,7 @@
         </header>
 
         <div class="search-section">
-            <div class="input-group">
+<div class="input-group">
                 <input type="text" id="cityInput" placeholder="Enter city name (e.g., London)" autocomplete="off">
                 <button id="searchBtn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -23,6 +23,13 @@
                     </svg>
                     Search
                 </button>
+                <button id="geoBtn" title="Current location">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button id="unitToggle" class="unit-btn">°C</button>
             </div>
         </div>
 
@@ -47,8 +54,9 @@
                 <div class="weather-icon" id="weatherIcon">🌤️</div>
             </div>
             
-            <div class="temp-section">
+<div class="temp-section">
                 <p class="temperature" id="temperature">20°C</p>
+                <p class="feels-like" id="feelsLike">Feels like 21°C</p>
                 <p class="condition" id="condition">Clear Sky</p>
             </div>
 
@@ -60,6 +68,10 @@
                 <div class="detail-item">
                     <span class="detail-label">Wind</span>
                     <span id="windSpeed" class="detail-value">3.2 km/h</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Precip</span>
+                    <span id="precip" class="detail-value">0%</span>
                 </div>
             </div>
 
@@ -80,6 +92,55 @@
                     </svg>
                 </div>
                 <p class="thermal-range" id="thermalRange">Country avg: 22-28°C <span class="country-side">Sides: 20°C</span></p>
+            </div>
+
+            <!-- Sunrise/Sunset & AQI Grid -->
+            <div class="extra-details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Sunrise</span>
+                    <span id="sunrise" class="detail-value">--</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Sunset</span>
+                    <span id="sunset" class="detail-value">--</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">AQI</span>
+                    <div class="aqi-gauge">
+                        <div id="aqiValue" class="aqi-text">—</div>
+                        <div id="aqiLabel" class="aqi-label">Good</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5-Day Forecast -->
+            <div class="forecast-section">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-scroll" id="forecastList">
+                    <!-- Dynamic forecast cards -->
+                </div>
+            </div>
+
+            <!-- Recent Searches -->
+            <div class="recent-section">
+                <h4>Recent</h4>
+                <div id="recentSearches" class="recent-list">
+                    <!-- Dynamic recent cities -->
+                </div>
+            </div>
+
+            <!-- Hourly Forecast Accordion -->
+            <div class="hourly-section">
+                <button id="hourlyToggle" class="accordion-btn">Hourly Forecast</button>
+                <div id="hourlyList" class="hourly-container hidden">
+                    <!-- Dynamic hourly data -->
+                </div>
+            </div>
+
+            <!-- Weather Map -->
+            <div class="map-section" id="mapSection" style="display: none;">
+                <h3>Map</h3>
+                <img id="weatherMap" alt="Weather map" style="width: 100%; height: 250px; border-radius: 16px;">
             </div>
         </div>
 

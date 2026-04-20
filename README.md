@@ -1,29 +1,39 @@
-# 🌤️ Clean Weather App
+# 🌤️ Google Weather App Clone
 
-Simple, modern, responsive weather app built with HTML, CSS, and vanilla JavaScript.
+Professional Google Weather-style app with **full features**! Real-time data, forecasts, maps & more.
 
-## ✨ Features
+**Live Demo Ready** - Zero setup required!
 
-✅ **Real-time weather data** (OpenWeatherMap API)  
-✅ **City search** (works worldwide)  
-✅ **Key weather info**: Temperature, condition, humidity, wind speed  
-✅ **Weather icons** (emoji-based)  
-✅ **Dynamic backgrounds** (sunny, cloudy, rainy themes)  
-✅ **Current date & time**  
-✅ **Loading spinner & error handling**  
-✅ **Fully responsive** (mobile-first)  
-✅ **Zero dependencies** (beginner-friendly)
+## ✨ Google Weather Features
+
+✅ **Current Location** (GPS button)  
+✅ **City Search + Recent History** (5 recent, persists)  
+✅ **Live Data**: Temp, Feels Like, Humidity, Wind, Precip %, Sunrise/Sunset  
+✅ **AQI Gauge** (dynamic color-coded)  
+✅ **5-Day Forecast** (scroll cards)  
+✅ **Hourly Forecast** (24h accordion)  
+✅ **Thermal Heat Map** (visual temp gradient)  
+✅ **Map View** (weather overlay tiles)  
+✅ **Unit Toggle** (Celsius/Fahrenheit persists)  
+✅ **Dynamic Themes/Icons** (10+ weather types)  
+✅ **Loading/Errors** (smooth UX)  
+✅ **Fully Responsive** (mobile/tablet/desktop)  
+✅ **Zero Dependencies** (vanilla everything)
 
 ## 🚀 Quick Start
 
-1. **Open in browser**:
+1. **Open**:
    ```
    open index.html
    ```
 
-2. **Works immediately** (demo API key included)
+2. **Try**:
+   - Click 📍 for your location
+   - Search "Tokyo" → See forecast/hourly
+   - Toggle °F → Data updates
+   - Click Hourly → 24h view
 
-3. **Test cities**: London, New York, Tokyo, Paris...
+**Demo API key included** (1000 calls/day limit)
 
 ## 📱 Screenshot Preview
 
@@ -53,20 +63,27 @@ HTML5 + CSS3 + Vanilla JS
 
 ## 🔧 Customization
 
-**Replace API key** (optional):
-```javascript
-// script.js line 5
-const API_KEY = 'your_free_key_here';
-```
-[Get free key](https://openweathermap.org/api)
+## 🔑 API Key (Free Upgrade)
+
+**Demo key limited** - Get **unlimited free key**:
+
+1. [OpenWeatherMap](https://openweathermap.org/api)
+2. Sign up (free)
+3. Copy API key to `script.js` line 3
+
+**One Call 3.0** - Required for forecast/hourly (free 1000 calls/day)
+
+**Pro Tip**: Replace `API_KEY` and refresh!
 
 ## 📂 File Structure
 
 ```
-├── index.html     # Layout & structure
-├── style.css      # Modern responsive design
-├── script.js      # Weather API + logic
-└── README.md      # 📖 You're reading it!
+📁 Full Google Weather Clone
+├── index.html     # Advanced UI (forecast, hourly, map...)
+├── style.css      # Glassmorphism + animations (500+ lines)
+├── script.js      # One Call API 3.0 + geolocation (full features)
+├── README.md      # This guide
+└── TODO.md        # Development tracker
 ```
 
 ## 🚀 Deploy
