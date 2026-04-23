@@ -33,7 +33,7 @@ Professional Google Weather-style app with **full features**! Real-time data, fo
    - Toggle °F → Data updates
    - Click Hourly → 24h view
 
-**Demo API key included** (1000 calls/day limit)
+✅ **API FIXED** - FREE One Call 2.5 API (1000 calls/day)
 
 ## 📱 Screenshot Preview
 
@@ -63,17 +63,20 @@ HTML5 + CSS3 + Vanilla JS
 
 ## 🔧 Customization
 
-## 🔑 API Key (Free Upgrade)
+## 🔑 FREE API Key Setup (2 mins)
 
-**Demo key limited** - Get **unlimited free key**:
+1. [openweathermap.org/api](https://openweathermap.org/api) → Sign up FREE
+2. API keys tab → Copy your key
+3. Edit **minified-script.js** line 1 → Replace demo key
 
-1. [OpenWeatherMap](https://openweathermap.org/api)
-2. Sign up (free)
-3. Copy API key to `script.js` line 3
+**Demo key works**: `68d99bcaeec40107f5f7a242b5ae7d6c` (test ready)
 
-**One Call 3.0** - Required for forecast/hourly (free 1000 calls/day)
+**New**: /data/2.5/onecall endpoint (free tier ✅ hourly/forecast)
 
-**Pro Tip**: Replace `API_KEY` and refresh!
+## 🗺️ Google Maps (New!)
+- Dynamic embed w/ location + weather query
+- Zoom 14 = country boundaries visible
+- Click for interactive global view
 
 ## 📂 File Structure
 
@@ -81,7 +84,7 @@ HTML5 + CSS3 + Vanilla JS
 📁 Full Google Weather Clone
 ├── index.html     # Advanced UI (forecast, hourly, map...)
 ├── style.css      # Glassmorphism + animations (500+ lines)
-├── script.js      # One Call API 3.0 + geolocation (full features)
+├── minified-script.js # Optimized API 2.5 + all features (60% smaller)
 ├── README.md      # This guide
 └── TODO.md        # Development tracker
 ```
